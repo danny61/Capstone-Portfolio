@@ -185,37 +185,23 @@ h6 {
    2. Navbar
 -----------------------------------------*/
 
-.navbar {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-	background: #1f2233;
-	box-shadow: 0 0 15px rgba(0, 0, 0, .12);
-    border: none;
-    margin-bottom: 0;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    z-index: 999;
+.navbar-toggle,
+.navbar-toggler.collapsed,
+.navbar-light .navbar-toggler {
+  background-color: rgba(0, 0, 0, .03);
+  outline: none;
+  border: none;
+  box-shadow: none;
+  color: transparent;
+  border-color: transparent;
 }
 
-.navbar.active-nav {
-    position: fixed;
-    background: #fff;
-	box-shadow: 0 0 15px rgba(0, 0, 0, .12);
-    border-radius: 0;
+.navbar-light .navbar-toggler-icon {
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, .95%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
-.navbar .menu-toggle {
-    position: relative;
-    padding: 10px 0;
-    float: right;
-    z-index: 2;
-    background: transparent;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    display: none;
+.navbar{
+    background-color: #1f2233;
 }
 
 /* --------------------------------------
