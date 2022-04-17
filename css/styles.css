@@ -8,6 +8,7 @@ Table Of Contents
  5. Resume
  6. Portfolio
  7. Footer
+ 8. Contact
 -----------------------------------------------------------------*/
 
 /* --------------------------------------
@@ -686,4 +687,125 @@ h6 {
 
 .bi {
     fill: white;
+}
+
+/* --------------------------------------
+   8. Contact
+-----------------------------------------*/
+
+.contact {
+    position: relative;
+    padding-top: 130px;
+    padding-bottom: 130px;
+	overflow: hidden;
+}
+
+.contact .contact-box {
+	position: relative;
+    padding: 30px 25px;
+    border: 1px solid #282c3e;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.contact .contact-box.two,
+.contact .contact-box:hover {
+    border: 1px solid #fdd05a;
+}
+
+.contact .contact-box:last-of-type {
+    margin-bottom: 0;
+}
+
+.contact .contact-box .icon-box i:before {
+    position: absolute;
+    top: 27px;
+    right: 25px;
+    border-radius: 50%;
+    font-size: 50px;
+    color: #fdd05a;
+    opacity: .9;
+}
+
+.contact .contact-box .title-box {
+    display: inline-block;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: .3px;
+    text-align: center;
+    border-radius: 24px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+
+.contact .contact-box .content-box p {
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 600;
+    color: #fbf4e0;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+}
+
+.contact .contact-box .content-box p:last-child {
+    margin-top: 3px;
+}
+
+.contact .contact-form {
+    position: relative;
+}
+
+.contact .contact-form .form-group {
+    margin-bottom: 35px;
+}
+
+.contact .contact-form .form-group .form-control {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #282c3e;
+    border-radius: 4px;
+    outline: none;
+    box-shadow: none;
+    height: 45px;
+    padding: 12px;
+}
+
+.contact .contact-form .form-group textarea.form-control {
+    height: 150px;
+    resize: none;
+    padding-top: 18px;
+}
+
+.contact .contact-form .form-group .form-control:focus {
+    border: 1px solid #fdd05a;
+}
+
+.contact .contact-form .contact-btn {
+    min-width: 175px;
+	cursor: pointer;
+}
+
+.contact .contact-form .contact-btn:focus {
+    outline: none;
+}
+
+.contact .contact-form .form-message {
+    position: absolute;
+    left: 0;
+    bottom: -72px;
+    width: 100%;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 12px;
+    text-transform: uppercase;
+}
+
+.contact .contact-form .form-message.success {
+	background-color: #37983b;
+}
+
+.contact .contact-form .form-message.error {
+	background-color: #f54033;
 }

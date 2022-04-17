@@ -59,6 +59,10 @@
                         <li class="nav-item">
                             <a class="nav-link text-white" href="#portfolio">Portfolio</a>
                         </li>
+
+                        <li class="nav-item">
+                            <button type="button" class="btn btn-outline-dark text-white" style="border-color: white;"><a href="#contact">Contact</a></button>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -77,31 +81,10 @@
                             <div class="home-text">
                                 <p>A Front-End Web Developer</p>
                             </div>
-                            <!--(Contact Me)-->
-                            <!--(Button trigger modal)-->
-                            <button type="button" class="main-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                Contact
+
+                            <button type="button" class="main-btn">
+                                <a href="#contact">Contact</a>
                             </button>
-                            
-                            <!--(Modal)-->
-                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                    ...
-                                    </div>
-                                    <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Save changes</button>
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
-                            <!--(End Contact Me)-->
                         </div>
                     </div>
                 </div>
@@ -257,6 +240,67 @@
         </div>
     </section>
     <!--(End Portfolio)-->
+    <!--(Start Contact)-->
+    <section class="contact" id="contact">
+        <span class="number show">04</span>
+        <div class="container">
+            <div class="main-title">
+                <h3>Get In Touch</h3>
+                <h2>Contact Me</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="contact-boxes">
+                        <div class="contact-box">
+                            <span class="icon-box"><i class="bi bi-pin-map"></i></span>
+                            <h4 class="title-box">Florida</h4>
+                            <div class="content-box">
+                                <p>USA</p>
+                                <p>Miami</p>
+                            </div>
+                        </div>
+                        <div class="contact-box two">
+                            <span class="icon-box"><i class="bi bi-envelope"></i></span>
+                            <h4 class="title-box">Email</h4>
+                            <div class="content-box">
+                                <p>Daniel@example.com</p>
+                                <p>Support@example.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-box">
+                            <span class="icon-box"><i class="bi bi-phone"></i></span>
+                            <h4 class="title-box">Phone</h4>
+                            <div class="content-box">
+                                <p>123-456-7890</p>
+                                <p>123-456-7890</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <form class="contact-form" action="mail.php" method="post">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Name" id="name" name="name" required="">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email" id="email" name="email" required="">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Subject" id="subject" name="subject" required="">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" placeholder="Your Message" id="message" name="message" required=""></textarea>
+                        </div>
+                        <!-- Button Send Message -->
+                        <button class="contact-btn main-btn" type="submit" name="send">Send Message</button>
+                        <!-- Form Message  -->
+                        <div class="form-message text-center"><span></span></div>
+                    </form> 
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--(End Contact)-->
     <!--(Start Footer)-->
     <section class="footer">
         <div class="container">
