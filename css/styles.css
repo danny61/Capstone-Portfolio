@@ -6,6 +6,7 @@ Table Of Contents
  3. Home
  4. About Me
  5. Resume
+ 6. Portfolio
 -----------------------------------------------------------------*/
 
 /* --------------------------------------
@@ -208,7 +209,7 @@ h6 {
    3. Home
 -----------------------------------------*/
 
-.overlay {
+.mainoverlay {
 	height: 100%;
 	background: rgba(31, 34, 51, .45);
     background: url('https://wallpaperaccess.com/full/185289.jpg') center center no-repeat;
@@ -508,4 +509,171 @@ h6 {
     font-weight: 400;
     padding: 0 20px 30px;
     margin: 0;
+}
+
+/* --------------------------------------
+   6. Portfolio
+-----------------------------------------*/
+
+.portfolio {
+    position: relative;
+	background-color: #1f2233;
+    padding-top: 130px;
+    padding-bottom: 100px;
+}
+
+.portfolio .filter-menu {
+    margin-bottom: 40px;
+}
+
+.portfolio .filter-menu .list-filter {
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.portfolio .list-filter li {
+    display: inline-block;
+    padding-right: 20px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: .4px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.portfolio .list-filter li.active {
+    color: #fdd05a;
+}
+
+.portfolio .portfolio-content .item {
+    position: relative;
+    overflow: hidden;
+	border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.portfolio .portfolio-content .item img {
+	border-radius: 4px;
+}
+
+.portfolio .portfolio-content .item:hover img {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.portfolio .portfolio-content .item .overlay { 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(36, 40, 61, .85);
+}
+
+.portfolio .portfolio-content .item:hover .overlay {
+    height: 100%;
+    -webkit-transition-duration: .6s;
+    -moz-transition-duration: .6s;
+    -o-transition-duration: .6s;
+    -ms-transition-duration: .6s;
+    transition-duration: .6s;
+}
+
+.portfolio .portfolio-content .item .overlay .item-title,
+.portfolio .portfolio-content .item .overlay .item-category span {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    display: inline-block;
+    color: #fff;
+    margin: 0;
+    font-size: 16px;
+    letter-spacing: .5px;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all .45s ease-in-out;
+    -moz-transition: all .45s ease-in-out;
+    -o-transition: all .45s ease-in-out;
+    -ms-transition: all .45s ease-in-out;
+}
+
+.portfolio .portfolio-content .item:hover .overlay .item-title,
+.portfolio .portfolio-content .item:hover .overlay .item-category span {
+    top: 28%;
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition-delay: .45s;
+    -moz-transition-delay: .45s;
+    -o-transition-delay: .45s;
+    -ms-transition-delay: .45s;
+    transition-delay: .45s;
+}
+
+.portfolio .portfolio-content .item .overlay .icon-img {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    color: #fff;
+    font-size: 20px;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+	visibility: hidden;
+    opacity: 0;
+}
+
+.portfolio .portfolio-content .item:hover .overlay .icon-img {
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+	visibility: visible;
+    opacity: 1;
+    -webkit-transition-delay: .45s;
+    -moz-transition-delay: .45s;
+    -o-transition-delay: .45s;
+    -ms-transition-delay: .45s;
+    transition-delay: .45s;
+}
+
+.portfolio .portfolio-content .item .overlay .item-category span {
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.portfolio .portfolio-content .item .overlay .item-category span:before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: -32px;
+    width: 26px;
+    height: 2px;
+	background-color: #fdd05a;
+}
+
+.portfolio .portfolio-content .item:hover .overlay .item-category span {
+    top: 65%;
+}
+
+#description {
+    font-size: 15px;
+}
+
+.item {
+    max-height: 291px;
 }
