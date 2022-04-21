@@ -838,6 +838,11 @@ h6 {
 	.about-me .about-info {
 		margin-top: 0;
 	}
+
+    /*=========== Portfolio ============*/
+    .portfolio-content {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 
 /* Medium devices (tablets, less than 992px) */
@@ -953,6 +958,11 @@ h6 {
 		top: 14px;
 		font-size: 34px;
 	}
+
+    /*=========== Portfolio ============*/
+    .portfolio-content {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 
 /* Small Devices */
@@ -1119,6 +1129,10 @@ h6 {
         padding-bottom: 70px;
     }
     
+    .portfolio-content {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
     /*=========== Contact ============*/
     .contact {
         padding-top: 100px;
@@ -1207,4 +1221,17 @@ h6 {
 		font-size: 38px;
 	}
 
+    /*=========== Portfolio ============*/
+    .portfolio-content {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
+
+.portfolio-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-width: 60vw;
 }
